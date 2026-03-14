@@ -1,0 +1,16 @@
+django>=4.0.0
+pymysql
+pandas
+joblib
+numpy
+scipy
+matplotlib
+seaborn
+wordcloud
+nltk
+scikit-learn
+ngboost
+tensorflow
+transformers
+torch
+sentence-transformers
