@@ -1,0 +1,230 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>User page</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            overflow-x: hidden;
+            font-family: Arial, sans-serif;
+            background-image: url("{% static 'images/mm5.jpg' %}");
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+        header{
+            width:100%;
+            height:4rem;
+            background-color: rgb(158, 184, 94);
+            position: sticky;
+            top:0;
+            z-index: 10;
+            display:flex;
+            align-items:center;
+            justify-content:space-between;
+            padding:0 2rem;
+        }
+        #heading h1{
+            margin:0;
+            white-space:nowrap;
+        }
+        #component{
+            display:flex;
+            gap:2rem;
+            white-space:nowrap;
+        }
+        #component a{
+            font-weight:bold;
+            text-decoration:none;
+            color:black;
+        }
+      #details-btn,#predict-btn{cursor: pointer;}
+        main {
+            padding-bottom: 6rem;
+            min-height: 100vh;
+        }
+        img{
+            width:85%;
+            height:300px;
+            display:block;
+            margin:2rem auto;
+        }
+        h2{
+            text-align:center;
+            padding-top:2rem;
+            color:aliceblue;
+        }
+        #user-details{
+            text-align:center;
+            margin-top:1rem;
+            display:none;
+        }
+        table{
+            margin:1rem auto;
+            background-color: aliceblue;
+        }
+        th, td{
+            padding:1rem;
+        }
+        #text-predict {
+            width:100%;
+            max-width:850px;
+            margin:1rem auto;
+            padding:1.5rem;
+            border-radius:10px;
+            display:none;
+            text-align:left;
+            position:relative;
+        }
+        #text-predict label{
+            font-size:1.3rem;
+            font-weight:bold;
+            color:aliceblue;
+            margin-bottom:0.5rem;
+            margin-left: 2rem;
+            display:block;
+        }
+        #text-predict textarea{
+            width:50%;
+            max-width:600px;
+            resize:none;
+            padding:1rem;
+            border:none;
+            border-radius:6px;
+            outline:none;
+            font-size:1rem;
+            display:block;
+        }
+        #text-predict button{
+            display:block;
+            margin-top:1rem;
+            margin-left:7rem;
+            padding:0.7rem 3rem;
+            border:none;
+            border-radius:20px;
+            font-weight:bold;
+            cursor:pointer;
+        }
+        #Output{
+            position:absolute;
+            top:7rem;
+            right:0;
+            width:380px;
+            text-align:center;
+            font-size:1.2rem;
+            font-weight:bold;
+        }
+        #Output span{
+            background:antiquewhite;
+            padding:0.5rem 0.8rem;
+            border-radius:8px;
+            display:inline-block;
+        }
+        @media(max-width:900px){
+            #Output{
+                position:relative;
+                right:auto;
+                margin-top:1rem;
+                width:100%;
+                text-align:center;
+            }
+        }
+        footer {
+            background-color: rgb(158, 184, 94);
+            position:fixed;
+            bottom:0;
+            width:100%;
+            text-align:center;
+            padding:6px 0;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <div id="heading">
+         <h1>Medical Bug Severity</h1>
+    </div>
+    <div id="component">
+        <a id="details-btn">User Info</a>
+        <a id="predict-btn">Test Prediction</a>
+        <a href="{% url 'prediction' %}">Batch Prediction</a>
+       
+        <a href="{% url 'login' %}">Logout</a>
+    </div>
+</header>
+<main>
+    <h2>Welcome to User Page</h2>
+    <img src="{% static 'images/nn2.jpg' %}"/>
+    <div id="text-predict" style="display:none;">
+        <form method="POST" action="{% url 'user_prediction' %}">
+            {% csrf_token %}
+            <label>Text Prediction:</label>
+            <textarea name="text" rows="7" placeholder="Enter Text" required></textarea>
+            <button type="submit">Predict</button>
+            {% if prediction %}
+            <p id="Output">
+                <span>Predictions Output As: {{ prediction|title }}</span>
+            </p>
+            {% endif %}
+        </form>
+    </div>
+
+    <div id="user-details" style="display:none;">
+        {% if user %}
+            <h3 style="color:aliceblue;">User Details:</h3>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Name</th><th>Email</th><th>Password</th><th>Role</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>{{ user.username }}</td>
+                        <td>{{ user.email }}</td>
+                        <td>{{ user.password }}</td>
+                        <td>{{ user.role }}</td>
+                    </tr>
+                </tbody>
+            </table>
+        {% endif %}
+    </div>
+
+    {% if prediction %}
+    <script>
+        document.getElementById("text-predict").style.display = "block";
+        document.getElementById("predict-btn").textContent = "Hide Prediction";
+    </script>
+    {% endif %}
+</main>
+<footer>
+    <h4>&copy; 2025 All Rights Reserved SAK Informatics</h4>
+</footer>
+<script>
+    const detailsBtn = document.getElementById("details-btn");
+    const userDetails = document.getElementById("user-details");
+
+    const predictBtn = document.getElementById("predict-btn");
+    const textPredict = document.getElementById("text-predict");
+
+    detailsBtn.addEventListener("click", () => {
+        const show = userDetails.style.display === "none";
+        userDetails.style.display = show ? "block" : "none";
+        detailsBtn.textContent = show ? "Hide Info" : "User Info";
+    });
+
+    predictBtn.addEventListener("click", () => {
+        const show = textPredict.style.display === "none";
+        textPredict.style.display = show ? "block" : "none";
+        predictBtn.textContent = show ? "Hide Prediction" : "Test Prediction";
+    });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,108 @@
+processed_Short Descritpion,Severity
+crash exit reloading pgae,non-severe
+user interface working due bug,non-severe
+lack interoperability iot device,severe
+network protocol embedded device,non-severe
+memory management bug,severe
+malicious activity happen due bug,severe
+drug delivery rate infusion pump remotely change,severe
+machine massively overdosed killed patient,severe
+information leak severity rank,severe
+device battery failed hold charge shortened runtime stopped unexpectedly,non-severe
+cyberattack crash system,severe
+overdose radiation lead patient death,severe
+malfunction occurs runtime error iot device,non-severe
+buffer overrun null pointer dereferences race condition resource memory leak,non-severe
+drug delivery rate infusion pump remotely change,severe
+label unnecessarily truncated doctor name,non-severe
+wrong entering number instance specify drug dos,severe
+digit cursor changed lead number entry error warning,severe
+wrong digit error like dose amount enter computer,severe
+bodily injury risk due defective design,severe
+manufacturing defect,non-severe
+doctor may receive alert patient taking medication due flaw,severe
+error tracking software overstates number step,severe
+flexibility issue iotmedical device,non-severe
+transmisiting data effect quality data due noise,severe
+inaccurate health record,severe
+circulating suffering due malfunction iot device,severe
+flaw iot device tell current condition patient,severe
+unauthorised access iot,severe
+information leakage release,non-severe
+backened infrastructure user impersonation,severe
+connection interference,non-severe
+information corruption disruption,severe
+flaw device design prevents transmitter sending compliance data physician,severe
+doctor view altered record iot device give affected patient medication lead allergic reaction,severe
+iot integrated cloud increase complexity,severe
+computer screen freezing,non-severe
+storage wrong patient data,severe
+formula calculation error,severe
+software flaw led loading wrong patient data,severe
+randomly stop browsing user interface,non-severe
+wrong electric charge pacemaker,severe
+error dialysis filtering,severe
+bug arise default credential,non-severe
+bug health database,non-severe
+implant failure due error,severe
+device log corruption,non-severe
+communication error,severe
+broken timer functionality,severe
+faulty surgical instrument,non-severe
+automaticaly flawed calculation abacus tpn software affected every patient,severe
+sensor bed malfunction causing bed apply pressure instead less immobile patient,severe
+missed medicaid deadline,non-severe
+compilation detection failure,severe
+invalid data supperssion,non-severe
+virus malware,severe
+sensor bed malfunction resulting painful bedsore exacerbating circulatory problem,severe
+inconveninet user interface,non-severe
+machine automatically display dose deliever patient delivering dose,severe
+missing index cause upgrade fail,severe
+system simply stopped,non-severe
+raw highly concentrated accelerator beam dangerous living tissue,severe
+software incompatible component,non-severe
+medication error,severe
+malfunction device cause overdose radiation,severe
+name patient screen correct,non-severe
+data lost corrupted,non-severe
+calculation function missing,non-severe
+wrong truntuable design lead accident,severe
+high pressure suction chest causing fatal lung injury,severe
+device performed manner completely unplanned,non-severe
+alarm failed sound,severe
+dosage stopped inconsistent data display unit,severe
+ventilator could fail altitude adjustment feature set 0 meter,severe
+logical error,non-severe
+typographic error software algorithm cause incompatibility two device,severe
+complication massive overdose,severe
+malfunction stop alerting patient critical heath status,severe
+accidental system failure,non-severe
+denial service do,severe
+without decimal point drug dose may ten hundred time high,severe
+configuration error iot device,severe
+big bang error anticipated,severe
+inappropriate security,severe
+system failed due invalid input data,non-severe
+database corruption,severe
+limitation value range,non-severe
+power lost,non-severe
+multiple inoperative condition occurred,severe
+interrupt error,severe
+device performing well function,non-severe
+unauthenticated user patient portal login,severe
+software permitted incorrect form data entry,severe
+dead code missing code,severe
+dose rate malfucntion,severe
+circumstance incorrect data entry,severe
+surgical error due equipment failure,severe
+system could incorrectly double dosage radiation,severe
+camcer patient received overdose medicine due system fault,severe
+miscalculates proper dosage radiation patient undergoing radiation therapy,severe
+complex device lead incorrect result,severe
+system parameter impact fucntion,non-severe
+software code might impact reliability performance device,severe
+device freeze system crash,severe
+modified protocol tps used without verification lead patient,severe
+ambiguity drug name patient record,non-severe
+obfuscation user interface,non-severe

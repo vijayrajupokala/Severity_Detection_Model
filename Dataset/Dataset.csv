@@ -1,0 +1,108 @@
+﻿Short Descritpion,Severity
+crash on exit after reloading a pgae,non-severe
+User's interface not working due to bug,non-severe
+Lack of interoperability in IOT devices,severe
+low-level network protocols for embedded devices,non-severe
+memory management bug,severe
+malicious activities happen due to bug ,severe
+drug delivery rates on infusion pumps remotely changes,severe
+machine that massively overdosed and killed patients,severe
+information leak with a severity rank of 9.1,severe
+"device batteries failed to hold their charge, had a shortened runtime and/or stopped unexpectedly",non-severe
+cyberattack can crashes the system ,severe
+overdose of radiation lead to patient's death ,severe
+malfunctions occurs such as runtime errors  in IOT devices,non-severe
+"buffer overruns, null pointer dereferences, race conditions, resource or memory leaks",non-severe
+drug delivery rates on infusion pumps remotely changes,severe
+computer-printed label has unnecessarily truncated the doctor’s name,non-severe
+wrong entering number for instances to specify drug doses,severe
+"digit not under the cursor is changed, which can lead to number entry errors with no warning",severe
+wrong digits error like 0.01drug dose amount but enter the 100.0 by computer,severe
+bodily injury risk due to defective design,severe
+a manufacturing defect,non-severe
+doctor may not receive alerts that the patient is not taking the medication due to flaw,severe
+an error in the tracking software overstates the number of steps,severe
+Flexibility issue of IOTmedical devices,non-severe
+transmisiting of data effect the quality of data due to noise,severe
+Inaccurate Health Records,severe
+Circulating suffering due to malfunction in IOT devices,severe
+Flaw in IOT devices don't tell current condition of the patient,severe
+Unauthorised access to the IoT ,severe
+information leakage or release,non-severe
+backened infrastructure user impersonation,severe
+connection interference,non-severe
+information corruption or disruption,severe
+flaw in the device design prevents the transmitter from sending compliance data to the physician,severe
+Doctors view the altered records in IOT  devices and give the affected patient medication that leads to an allergic reaction,severe
+" IoT, integrated with the cloud increases the complexity",severe
+computer screens freezing,non-severe
+storage of wrong patient data,severe
+formula calculation errors,severe
+software flaws led to loading the wrong patient data,severe
+Randomly stop when browsing user interface,non-severe
+wrong electric charge with a pacemaker,severe
+error in dialysis filtering,severe
+bugs arise because of default credentials,non-severe
+bugs in health database ,non-severe
+Implant failures due to error,severe
+device log corruption,non-severe
+communication error,severe
+broken timer functionality,severe
+faulty surgical instruments,non-severe
+Automaticaly flawed calculations of Abacus Tpn software affected every patient,severe
+"sensor on the bed malfunctions, causing the bed to apply more pressure (instead of less) to an immobile patient",severe
+missed medicaid deadline,non-severe
+compilation detection failure,severe
+invalid data supperssion,non-severe
+virus or malware,severe
+"sensor on the bed malfunctions, resulting in painful bedsores and exacerbating circulatory problems",severe
+inconveninet user interface,non-severe
+machine automatically display no dose deliever to the patient after delivering dose,severe
+missing indexes cause upgrades to fail,severe
+system simply stopped,non-severe
+"raw, highly concentrated accelerator beam is dangerous to living tissues",severe
+Software incompatible with other components,non-severe
+Medication Error,severe
+malfunction in devices cause of overdose radiation,severe
+name of patient on screen not correct,non-severe
+data were lost or corrupted,non-severe
+calculation or other function was missing,non-severe
+wrong Therac-25 truntuable design lead to an accident,severe
+high pressure suction to the chest causing fatal lung injuries,severe
+device performed in a manner completely unplanned,non-severe
+an alarm failed to sound,severe
+Dosages were stopped inconsistent with the data on the display unit.,severe
+ventilator could fail when the altitude adjustment feature was set on 0 meters,severe
+logical error,non-severe
+A typographic error in software algorithm causes incompatibility between two devices,severe
+complication of massive overdose ,severe
+malfunction stop alerting patients when critical heath status ,severe
+Accidental system failure ,non-severe
+Denial of Service(DoS),severe
+"without the decimal point, the drug dose may be ten or a hundred times too high",severe
+Configuration errors in IOT devices,severe
+Big bang error not anticipated,severe
+Over-zealous and inappropriate security,severe
+System failed due to invalid input data,non-severe
+Database corruption,severe
+limitation in value range,non-severe
+power lost,non-severe
+multiple inoperative conditions occurred,severe
+"I/O interrupt, I/O error",severe
+Device not performing well of its function,non-severe
+unauthenticated user to the Patient Portal Login,severe
+software permitted incorrect forms of data entry,severe
+dead code or missing code,severe
+dose rate malfucntion,severe
+circumstances of the incorrect data entry,severe
+surgical errors due to equipment failure,severe
+systems could incorrectly double the dosage of radiation,severe
+camcer patient received overdose of medicine due to system fault,severe
+miscalculates the proper dosage of radiation for patients undergoing radiation therapy,severe
+complex devices lead incorrect result,severe
+systems parameters impact on fucntion,non-severe
+software code might impact the reliability or performance of a device,severe
+device freezes or system crashes.,severe
+ modified protocol of TPS was used without verification that lead to patients,severe
+Ambiguity on drugs name or patient records,non-severe
+Obfuscation user interface,non-severe
